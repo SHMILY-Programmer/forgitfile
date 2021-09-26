@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@drawable/background1"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="姓名"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textSize="35dp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/text3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:hint="在此输入姓名"
+            android:textColorHint="#808080"
+            android:textSize="35dp"
+            android:textColor="#000000">
+
+        </EditText>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="学号"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textSize="35dp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/text4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:hint="在此输入学号"
+            android:textColorHint="#808080"
+            android:textSize="35dp"
+            android:textColor="#000000">
+
+        </EditText>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/background2"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:gravity="center"
+        android:layout_below="@id/tv1"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        >
+
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:text="请按住“打卡”\n并说出“华北电力大学控计学院”"
+            android:textColor="#000000"
+            android:textSize="35dp"
+            android:gravity="center"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="250dp"
+                android:layout_height="100dp"
+                android:text="打卡"
+                android:textSize="40dp"
+                android:gravity="center"
+                android:background="@drawable/button_circle_shape"
+                >
+            </Button>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

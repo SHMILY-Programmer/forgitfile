@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background1"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="center"
+        android:text="智能定位语音考勤系统"
+        android:textSize="35dp" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/background2"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:gravity="center"
+        android:layout_below="@id/tv1"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        >
+        <Button
+            android:id="@+id/login"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:text="打卡"
+            android:textSize="40dp"
+            android:gravity="center"
+            android:background="@drawable/button_circle_shape"
+            >
+        </Button>
+        <Button
+            android:id="@+id/registration"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:text="注册"
+            android:textSize="40dp"
+            android:gravity="center"
+            android:background="@drawable/button_circle_shape"
+            >
+        </Button>
+
+    </LinearLayout>
+
+</RelativeLayout>
